@@ -6,7 +6,8 @@ import {SafeAreaView,
         TextInput, 
         Text, 
         TouchableOpacity,
-        Alert} from 'react-native';
+        Alert,
+        Linking} from 'react-native';
 
 const App = (props) => {
 
@@ -15,7 +16,7 @@ const App = (props) => {
   const [password, setPassword] = useState("");
 
   const login = () => {
-    Alert.alert("CLARUSWAY", `E-mail: ${email}, Password: ${password}`)
+    Alert.alert("LOGIN", `E-mail: ${email}, Password: ${password}`)
   }
 
 
@@ -76,7 +77,10 @@ const App = (props) => {
             Sign up with Google
           </Text>
 
-          <TouchableOpacity style={styles.button}>
+          <TouchableOpacity 
+            style={styles.button}
+            onPress={() => Linking.openURL('https://www.dropbox.com/?_hp=c')}
+          >
             <Text style={{color: 'white', fontSize: 16,}}>Create New Account</Text>
           </TouchableOpacity>
 
