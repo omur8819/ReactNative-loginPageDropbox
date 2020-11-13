@@ -1,4 +1,4 @@
-### Login Page Dropbox React-Native
+## Login Page Dropbox React-Native
 
 This project is an example about login page exercise.
 
